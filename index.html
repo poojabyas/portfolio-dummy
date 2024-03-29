@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            border:1px solid red;
+            background-color: black;
+            color: blue;
+            text-align: center;
+            height: 80px;
+        }
+        .navbar{
+            border:1px solid pink;
+            background-color: grey; 
+            padding:10px; 
+        }
+        .navbar .btn {
+            margin-right: 10px; 
+        }
+        .container{
+            border:1px solid;
+             
+        }
+        .section {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 20px; 
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .section img {
+            width: 13%; 
+            margin-right: 20px; 
+        }
+        .section h3, .section p {
+            margin-left: 350px; 
+        }
+         /* Media Query for Mobile Screens */
+         @media only screen and (max-width: 600px) {
+            .head, .navbar, .container, .section {
+                width: 100%;
+            }
+            .section {
+                flex-direction: column; /* Stack content vertically for mobile */
+            }
+            .section img {
+                margin-right: 0; /* Remove margin for images on mobile */
+                margin-bottom: 10px; /* Add margin below images on mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <header><h1>My Portfolio</h1></header>
+    </div>
+    
+    <nav class="navbar">
+        <div class="btn">
+            <button class="btn">Home</button>
+            <button class="btn">Education</button>
+            <button class="btn">Projects</button>
+            <button class="btn">Skill</button>
+            <button class="btn">Contect me</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <img src="./p1.png" alt="">
+            <div>
+                <h3 style="color: greenyellow;">Home</h3>
+                <p>This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="./p2.png" alt="">
+            <div>
+                <h3 style="color: red;">Education</h3>
+                <p>This is a dummy description for the Education section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="./p3.png" alt="">
+            <div>
+                <h3 style="color: violet">Projects</h3>
+                <p>This is a dummy description for the Projects section. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="./p4.png" alt="">
+            <div>
+                <h3 style="color: orange">Skill</h3>
+                <p>This is a dummy description for the Skills section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="./p5.png" alt="">
+            <div>
+                <h3 style="color: darksalmon">Contect me</h3>
+                <p>This is a dummy description for the Contact Me section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
